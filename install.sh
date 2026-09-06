@@ -12,6 +12,11 @@ cp "$SCRIPT_DIR/install.sh" "$SKILL_DIR/install.sh"
 cp "$SCRIPT_DIR"/scripts/*.sh "$SKILL_DIR/scripts/"
 chmod +x "$SKILL_DIR/install.sh" "$SKILL_DIR"/scripts/*.sh
 
+mkdir -p "$SKILL_DIR/scripts" "$SKILL_DIR/references"
+cp "$SCRIPT_DIR/skill-update.json" "$SKILL_DIR/skill-update.json"
+cp "$SCRIPT_DIR/scripts/skill-update-state.py" "$SKILL_DIR/scripts/skill-update-state.py"
+cp "$SCRIPT_DIR/references/public-updates.md" "$SKILL_DIR/references/public-updates.md"
+
 echo "Installed emoji-consistency skill to $SKILL_DIR"
 echo ""
 echo "Prerequisites:"
